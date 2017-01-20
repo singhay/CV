@@ -1,0 +1,98 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Original author:
+% Ayush K Singh
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring
+% the document.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage{hyperref}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\name{Ayush K Singh}
+\address{(857)~302-9712 \\ 54 Burbank St. \\ Boston, MA}
+\address{\href{github.com/singhay}{github.com/singhay} \\ \href{mailto:singhay@ccs.neu.edu}{singhay@ccs.neu.edu} \\ \href{linkedin.com/in/singhay}{linkedin.com/in/singhay}}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+\begin{rSubsection}{Northeastern University}{Boston, MA}{Master of Science in Computer Science}{Expected - Dec. 2017}
+\item Coursework: Machine Learning, Distributed Systems \& Cloud Computing, PGM and Parsimonious Modeling, Algorithms, Cognitive Computing \& Deep Learning, Parallel Data Processing in MapReduce
+\item Received \href{http://www.northeastern.edu/data-analytics/data-science-certificate/}{Graduate Certificate} in Data Analytics $i.e.$ Stats, Mining, Storing, Visualization.
+\item Developed command line interface to \href{https://github.com/singhay/ms-courses-code/tree/master/CS5600-Computer-Systems/team-05-hw1-master}{simulate Unix shell} and \href{https://github.com/singhay/ms-courses-code/tree/master/CS5600-Computer-Systems/team-05-hw2-master}{file system} in C.
+\item Built a \href{https://github.com/singhay/ms-courses-code/tree/master/CS7680-Cloud-Computing-Distributed-Systems}{VM to provision on premise resources} from AWS for scaling apps at peak workloads.
+\item Developed a learning to rank \href{https://github.com/singhay/ms-courses-code/tree/master/CS6140-Machine-Learning}{game rating system} improving conventional rating system by 8\%.
+\item Programmed solutions for \href{https://github.com/singhay/ms-courses-code/tree/master/CS5010-Programming-Design-Paradigm}{graph search, animations and inventory management} in Scheme.
+\end{rSubsection}
+
+\begin{rSubsection}{Graphic Era University}{Dehradun, India}{Bachelor of Technology in Computer Science \& Engineering}{Sept. 2010 - Aug. 2014}
+\item Coursework: Software Engineering, Design \& Analysis of Algorithms, Computer Architecture, \\ Computer Networks, Operating System Concepts, Database Management Systems, OOP Concepts
+\item Location based Online Grocery Store
+\begin{rSubsubsection}
+\item Developed a responsive single page app in MEAN storing sessions in Redis.
+\item Devised tool to monitor inventory, track sales \& app performance using statsD - Graphite.
+\item Built an item-item similarity based collaborative filtering recommender using Spark MLlib.
+\end{rSubsubsection}
+\item Developed Official College Festival \href{http://iblong2iyush.github.io/grafest}{website} using JavaScript, and Google Docs API.
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+\begin{rSubsection}{TripAdvisor}{Boston, MA}{Software Engineer Co-op}{May 2016 - Dec. 2016}
+\item Improved personalization from time weighted to collaborative filtering getting 17\% sales hike.
+\item Built an end to end admin app for support team to update subscriber’s details in MEAN Stack.
+\item Developed log processor to categorize, process and visualize exim logs in python, Kafka, ELK.
+\item Built personalized attractions and subject line recommender at hack days in R, python.
+\item Automated the process of setting up workspace for bootstrapping new hires in bash.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Indian Defence Research and Development Organization}{Agra, India}{Intern}{July 2013 - Sep. 2013}
+\item Converted entire paper oriented equipment demand system to online portal using LAMP stack reducing the processing time by 20\%.
+\item Assisted scaling the application horizontally to functional departments of the Organization.
+
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Languages & C, C$++$, Python, JavaScript, Java, Scheme, \LaTeX \\
+Big Data & R, Spark, Map Reduce, Spark, Hive, Pig, ELK, Kafka, Tableau \\
+Databases & MySQL, RedShift, MongoDB, Elasticsearch, Solr, Redis, Cassandra \\
+ML and AI & Theano, TensorFlow, Keras, scikit-learn, NumPy, pandas, seaborn, Caffe \\
+Web & HTML, CSS, JSP, PHP, NodeJS, AngularJS, ReactJS, jQuery, Django, SpringMVC
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
