@@ -16,6 +16,8 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
+\usepackage{multicol}
+\usepackage{lipsum}% dummy text
 \usepackage{hyperref}
 \usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.5in]{geometry} % Document margins
 
@@ -25,34 +27,50 @@
 
 \begin{document}
 
+% \setlength{\columnseprule}{0.4pt}
+
+% \begin{multicols}{3}
+
+% (857)~302-9712 Ayush K Singh \href{github.com/singhay}{github.com/singhay} \\ 54 Burbank St. Boston, MA \\
+%  Available: May - August \\
+%  \href{mailto:singhay@ccs.neu.edu}{singhay@ccs.neu.edu} \\ \href{linkedin.com/in/singhay}{linkedin.com/in/singhay}
+
+% \end{multicols}
+
+%----------------------------------------------------------------------------------------
+%	SUMMARY SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Summary}
+Dedicated Web Developer and Big Data Analyst committed to the growth of Organization. With strong work ethics and professional demeanor, I bring excellent problem solving skills, technology agnostic quick learning attitude and resposible work ownership of diverse projects.
+\end{rSection}
+
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
 
-\begin{rSubsection}{Northeastern University}{Boston, MA}{Master of Science in Computer Science}{Expected - Dec. 2017}
-\item Coursework: \href{http://www.ccs.neu.edu/home/vip/teach/MLcourse/html/}{Machine Learning}, \href{https://okrieg.github.io/EC500/index-spring-2016.html}{Distributed Systems \& Cloud Computing}, \href{http://www.ccs.neu.edu/home/eelhami/courses_nu_cs7180.htm}{PGM \& Parsimonious \mbox{Modeling}}, Cognitive Computing \& Deep Learning, \href{http://www.ccs.neu.edu/home/mirek/classes/2012-F-CS6240/}{Parallel Data Processing in MapReduce}
-\item Developing a framework to compress redundant Neural Networks for Deep Learning on FPGA.
-\item Researching on parameter estimation and finding elimination ordering in bipartite clinical PGM.
-\item Mined $27$ years worth of BTS airline data to find top $n$ least delay, hops and predict cheapest flights.
-\item Built a Neural Network to predict bird sightings from \href{http://www.ccs.neu.edu/home/mirek/papers/ebird-ref-data.pdf}{eBird Dataset} getting highest accuracy of 94.6\%.
-\item Received \href{http://www.northeastern.edu/data-analytics/data-science-certificate/}{Graduate Certificate} in Data Analytics $i.e.$ Stats, Mining, Storing, Visualization.
-\item Built a \href{https://github.com/singhay/ms-courses-code/tree/master/CS7680-Cloud-Computing-Distributed-Systems}{VM to provision on premise resources} from AWS for scaling apps at peak workloads.
-\item Developed a learning to rank \href{https://github.com/singhay/ms-courses-code/tree/master/CS6140-Machine-Learning}{game rating system} improving conventional rating system by 8\%.
-\item Developed command line interface to \href{https://github.com/singhay/ms-courses-code/tree/master/CS5600-Computer-Systems/team-05-hw1-master}{simulate Unix shell} and \href{https://github.com/singhay/ms-courses-code/tree/master/CS5600-Computer-Systems/team-05-hw2-master}{file system} in C.
+\begin{rSubsection}{Northeastern University}{Boston, MA}{Master of Science in Computer \& Data Science}{Sept. 2015 - Dec. 2017}
+\item \textbf{Coursework} \href{http://www.ccs.neu.edu/home/vip/teach/MLcourse/html/}{Machine Learning}, \href{https://okrieg.github.io/EC500/index-spring-2016.html}{Distributed Systems \& Cloud Computing}, \href{http://www.ccs.neu.edu/home/eelhami/courses_nu_cs7180.htm}{High Dimensional Data Analysis}, Cognitive Computing \& Deep Learning, \href{http://www.ccs.neu.edu/home/mirek/classes/2012-F-CS6240/}{Parallel Data Processing in MapReduce \& Spark} \smallskip
+% \item Developing a framework to compress redundant Neural Networks for Deep Learning on FPGA.
+% \item Researching on parameter estimation and finding elimination ordering in bipartite clinical PGM.
+\item Built model to predict bird sightings from mining \href{http://www.ccs.neu.edu/home/mirek/papers/ebird-ref-data.pdf}{eBird Dataset} using MapReduce with 82.6\% accuracy.
+\item Deployed a Cloud Architecture \href{https://github.com/singhay/ms-courses-code/tree/master/CS7680-Cloud-Computing-Distributed-Systems}{to provision on premise resources} from AWS for scaling apps at peak workloads.
+\item Developed a learning to rank \href{https://github.com/singhay/ms-courses-code/tree/master/CS6140-Machine-Learning}{player rating system} improving conventional rating system by 8\%.
+\item Developed command line interface to \href{https://github.com/singhay/ms-courses-code/tree/master/CS5600-Computer-Systems/team-05-hw1-master}{simulate Unix shell} and \href{https://github.com/singhay/ms-courses-code/tree/master/CS5600-Computer-Systems/team-05-hw2-master}{file system} in User Space in C.
 %\item Programmed solutions for \href{https://github.com/singhay/ms-courses-code/tree/master/CS5010-Programming-Design-Paradigm}{graph search, animations and inventory management} in Scheme.
 \end{rSubsection}
 
 \begin{rSubsection}{Graphic Era University}{Dehradun, India}{Bachelor of Technology in Computer Science \& Engineering}{Sept. 2010 - Aug. 2014}
-\item Coursework: Software Engineering, Design \& Analysis of Algorithms, Computer Architecture, \\ Computer Networks, Operating System Concepts, Database Management Systems, OOP Concepts
-\item Location based Online Grocery Store
+\item \textbf{Coursework} Software Engineering, Design \& Analysis of Algorithms, Computer Architecture, \\ Computer Networks, Operating System Concepts, Database Management Systems, OOP Concepts \smallskip
+\item Online Grocery Store
 \begin{rSubsubsection}
-\item Developed a responsive single page app in MEAN storing sessions in Redis.
-\item Devised tool to monitor inventory, track sales \& app performance using statsD - Graphite.
-\item Built an item-item similarity based collaborative filtering recommender using Spark MLlib.
-\end{rSubsubsection}
-\item Developed Official College Festival \href{http://iblong2iyush.github.io/grafest}{website} using JavaScript, and Google Docs API.
+\item Developed a responsive single page app in MySQL, AngularJS and NodeJS storing sessions in Redis.
+\item Devised tool to monitor inventory, sales and app performance analytics using statsD, Grafana, d3JS.
+\item Incorporated an item-item similarity based collaborative filtering recommender using Spark MLlib.
+\end{rSubsubsection} \smallskip
+\item Developed Official College Festival \href{http://iblong2iyhttps://preview.overleaf.com/public/qycvbyjhwrmh/images/78709a256178de9896998a942796c447cb008f76.jpegush.github.io/grafest}{website} using JavaScript, and Google Docs API.
 \end{rSubsection}
 
 \end{rSection}
@@ -64,18 +82,18 @@
 \begin{rSection}{Experience}
 
 \begin{rSubsection}{TripAdvisor}{Boston, MA}{Software Engineer Co-op}{May 2016 - Dec. 2016}
-\item Improved personalization from time weighted to collaborative filtering getting 17\% sales hike.
-\item Built an end to end admin app for support team to update subscriber’s details in MEAN Stack.
-\item Developed log processor to categorize, process and visualize exim logs in python, Kafka, ELK.
-\item Built personalized attractions and subject line recommender at hack days in R, python.
+\item Improved personalization from time weighted to collaborative filtering resulting in 17\% sales hike.
+\item Built a web app for support team to update subscriber’s details in MySQL, AngularJS and NodeJS with autocomplete search engine, activity logs, LDAP authorization and extensive form handling routines.
+\item Developed log processor to categorize, and process realtime exim logs in python from a  Kafka event stream, saving results in ElasticSearch and visualizing it in Kibana dashboards.
+\item Created and added natural language processing Email Subject Line scoring model to CRM platform from in house dataset adding immediate boost in email open rates.
 %\item Automated the process of setting up workspace for bootstrapping new hires in bash.
 \end{rSubsection}
 
 %------------------------------------------------
 
 \begin{rSubsection}{Indian Defense Research and Development Organization}{Agra, India}{Intern}{July 2013 - Sep. 2013}
-\item Converted entire paper oriented equipment demand system to online portal for Scientists.
-\item Built an end to end app using LAMP stack reducing the application processing time by 20\%.
+\item Built an web app using Linux Operating System, Apache Web Server, MySQL Database, and PHP stack cutting the manual application processing time from three months to two weeks.
+\item Developed automated data report generation pipeline using macros in EXCEL \& CMD scripting and prepared dashboards to show descriptive statistics and analyze data key points.
 %\item Assisted scaling the application horizontally to functional departments of the Organization.
 
 \end{rSubsection}
@@ -89,10 +107,10 @@
 \begin{rSection}{Skills}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Languages & C, Python, Java, JavaScript, Scala, Julia, Shell, \LaTeX \\
-ML & Theano, TensorFlow, Keras, CNTK, scikit-learn, MXNet \\
+Languages & C, Python, Java, JavaScript, Scala, R, Bash, PHP, \LaTeX \\
+ML & TensorFlow, Keras, H2O, scikit-learn, Caffe, MXNet \\
 Databases & MySQL, RedShift, MongoDB, Elasticsearch, Solr, Redis, HBase \\
-Big Data & R, Spark, Map Reduce, Hive, Pig, ELK, Kafka, Tableau, AWS, OpenStack \\
+Big Data & Spark, Map Reduce, Hive, Pig, ELK, Kafka, Tableau, AWS, OpenStack \\
 Web & HTML, CSS, JSP, PHP, NodeJS, AngularJS, ReactJS, jQuery, Django, SpringMVC
 \end{tabular}
 
